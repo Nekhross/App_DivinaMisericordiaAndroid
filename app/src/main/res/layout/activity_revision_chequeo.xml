@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".revisionChequeo">
+
+    <include layout="@layout/componentes" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="545dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="488dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="-50dp"
+                        android:gravity="center"
+                        android:text="Chequeo Medico"
+                        android:textAlignment="center"
+                        android:textColor=" #1978a7 "
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginBottom="10sp"
+                        app:cardBackgroundColor="#88587d "
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:tint="#FFFFFF"
+                                app:srcCompat="?attr/actionModePasteDrawable" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="93dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="Id:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="fecha:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="hora:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="nota evolución:"
+                                    android:textAlignment="center"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:gravity="center"
+                                    android:text="Diagnostico:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Id" />
+
+                                <TextView
+                                    android:id="@+id/lblfecha"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="fecha" />
+
+                                <TextView
+                                    android:id="@+id/lblhora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="hora" />
+
+                                <TextView
+                                    android:id="@+id/lblnotaevo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Id" />
+
+                                <TextView
+                                    android:id="@+id/lbldiagnostico"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Id" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnregresarlis"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10sp"
+                            android:backgroundTint=" #1978a7 "
+                            android:text="Regresar"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:icon="?attr/actionModeCloseDrawable"
+                            app:iconGravity="textStart"
+                            app:iconSize="35sp"
+                            app:iconTint="#FFFFFF" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

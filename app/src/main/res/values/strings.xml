@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">App_DivinaMisericordia</string>
+
+    <string-array name="estado_options">
+        <item>Todos</item>
+        <item>Activos</item>
+        <item>Inactivos</item>
+    </string-array>
+
+    <string-array name="rol">
+        <item>admin</item>
+        <item>medico</item>
+        <item>enfermera</item>
+    </string-array>
+
+
+</resources>

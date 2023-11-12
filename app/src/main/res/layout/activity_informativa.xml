@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".informativa">
+
+    <include layout="@layout/componentes" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="254dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:drawablePadding="-50dp"
+                android:gravity="center"
+                android:text="Secciòn Informativa"
+                android:textAlignment="center"
+                android:textColor=" #1978a7 "
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btndireccion"
+                android:layout_width="145dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#853773"
+                android:text="COMO LLEGAR"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:icon="@android:drawable/ic_dialog_map"
+                app:iconSize="30dp"
+                app:iconTint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#853773"
+                    android:padding="20dp"
+                    android:text="Acerca de nosotros"
+                    android:textAlignment="center"
+                    android:textColor="#FFFDFD"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:paddingEnd="30dp"
+                    android:text="El Albergue para desamparados Divina Misericordia es único en su género en el país por sus características y los servicios que brinda. En el Ecuador existen solo cuatro centros para enfermos mentales, centros ubicados en las provincias de Pichincha, Guayas, Azuay y El Oro.
+Nuestro centro es el único no gubernamental que acoge a personas completamente desamparadas y adultos ancianos con problemas físicos como ceguera, sordera, epilepsia, parapléjicos con alteraciones mentales, que por su extrema pobreza y no tener familiares, no han sido aceptados en otros centros de ayuda social. La provincia de El Oro, a pesar de su población y de la demanda existente, no cuenta con un Hospital Psiquiátrico, siendo nuestro centro el único que atiende a estos pacientes, completamente desamparados." />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/imgprincipal" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="Nuestra labor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Gracias al esfuerzo, apoyo y amor de su voluntariado, del escaso personal que labora en forma entusiasta en el albergue y al tratamiento psiquiátrico desinteresado del Doctor Juan Varas, desplegado desde la creación del mismo, se ha logrado que los pacientes tengan en la actualidad una estabilidad física y mental aceptable." />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/labores" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#853773"
+                    android:padding="20dp"
+                    android:text="NUESTROS PROYECTOS"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:foregroundTint="#807B7B"
+                                    app:cardCornerRadius="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sueños"
+                                            android:textAlignment="center"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Nuestro gran sueño es lograr la construcción de un Hospital psiquiátrico con capacidad para 100 internos. A diario acuden a nuestras puertas, en busca de ayuda, pero lastimosamente nuestra capacidad física, humana y económica es limitada."
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="330dp"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="VISION"
+                                            android:textAlignment="center"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="La visión en la Fundación Divina Misericordia es construir un mundo donde todas las personas reciban el amor, el cuidado y el apoyo que merecen. Nos comprometemos a ser un faro de esperanza y un refugio seguro para aquellos que a menudo son ignorados y marginados por la sociedad."
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="400dp"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Misión"
+                                            android:textAlignment="center"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Nuestra misión, buscamos marcar una diferencia significativa en las vidas de las personas desamparadas con discapacidades mentales en situaciones de extrema pobreza. Nos impulsa el compromiso de construir un mundo más inclusivo y justo, donde todas las personas tengan la oportunidad de vivir una vida digna y plena, independientemente de sus circunstancias."
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </TableRow>
+                    </HorizontalScrollView>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#853773"
+                    android:padding="20dp"
+                    android:text="HISTORIAS"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Nuestra Historia"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:paddingEnd="30dp"
+                    android:text="La ayuda al necesitado ha estado siempre en nuestros corazones, es un don que se lo lleva dentro, como un mandato de Dios; sin embargo, esa pequeña chispa no se enciende hasta sentir en carne propia determinada necesidad.”
+
+La misión como tal se inició por una revelación divina realizada a Miguel Cabrera Loja en la Iglesia Catedral de Machala, en la que se le indicaba que se acercara a un hombre que estaba en oración postrada ante el Santísimo para que lo evangelizara, este hombre era el señor Bolívar Zambrano Sánchez, quien acepta con humildad la voluntad del Señor.
+
+Por un lapso de dos meses, reciben de Don Bolívar, la Palabra de Dios. En el año de 1992, movido por el Espíritu de Dios, nace en ellos la idea de ayudar a las personas menesterosas que deambulan por las calles llevando al primer mendigo con alteraciones mentales hasta el patio una casa el mismo que no contaba siquiera con cerramiento, lo que les obligaba a atarlo por las noches en un árbol para evitar que se escapara. Aquí empiezan a cobijar a más desamparados, prodigándoles cuidados, compartiendo lo poco o nada que poseían."
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/bolivarzambrano" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bolivar Zambrano"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#853773"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="© 2023 Fundación Divina Misericordia."
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Todos los derechos reservados."
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

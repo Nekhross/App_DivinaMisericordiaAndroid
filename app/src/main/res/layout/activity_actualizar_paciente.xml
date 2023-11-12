@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+    android:foregroundTint="#000000"
+    android:foregroundTintMode="add"
+    android:orientation="vertical"
+    tools:context=".actualizarPaciente">
+
+    <include layout="@layout/componentes" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="547dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="545dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="488dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/barraActualizar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="-50dp"
+                        android:gravity="center"
+                        android:text="Actualizaciòn de Paciente"
+                        android:textAlignment="center"
+                        android:textColor=" #1978a7 "
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="1sp"
+                        android:layout_marginBottom="10sp"
+                        app:cardBackgroundColor="#88587d "
+                        app:cardElevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/actfotopaciente"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:padding="100dp"
+                            android:scaleType="centerCrop"
+                            android:textAlignment="center"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="72dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="Id:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="Cedula:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="Apellidos:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:foregroundTint="#000000"
+                                    android:gravity="center"
+                                    android:text="Nombres:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="41dp"
+                                    android:gravity="center"
+                                    android:text="Estado:"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/ttxid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="10dp"
+                                    android:text="Id" />
+
+                                <EditText
+                                    android:id="@+id/txtcedulaact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:inputType="text"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtapellidosact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:inputType="text"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtnombresact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:inputType="text"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerestado"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:backgroundTint="#9C27B0"
+                                    android:backgroundTintMode="add"
+                                    android:focusable="auto"
+                                    android:hapticFeedbackEnabled="true"
+                                    android:spinnerMode="dropdown"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnactualizado"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10sp"
+                            android:backgroundTint=" #1978a7 "
+                            android:text="Actualizar"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            app:icon="@android:drawable/ic_popup_sync"
+                            app:iconGravity="textStart"
+                            app:iconSize="35sp"
+                            app:iconTint="#FFFFFF" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

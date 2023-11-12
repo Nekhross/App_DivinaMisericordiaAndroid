@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Define el estilo para los CardView -->
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/color_cardview_background_dark</item>
+        <!-- Otros atributos de diseño para los CardView -->
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.App_DivinaMisericordia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- Establece el estilo personalizado para los CardView -->
+        <item name="cardViewStyle">@style/CardViewStyle</item>
+        <item name="android:windowBackground">@color/color_background_dark</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+
+
+
+    </style>
+
+</resources>
