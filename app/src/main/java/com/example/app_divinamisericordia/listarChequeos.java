@@ -120,7 +120,7 @@ public class listarChequeos extends AppCompatActivity implements View.OnClickLis
                                 }
 
                                 if (i == 0) {
-                                    Toast.makeText(getApplicationContext(), "No se encontraron pacientes", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "No se encontraron chequeos medicos", Toast.LENGTH_SHORT).show();
                                 }
 
                                 adaptador = new chequeoAdapter(listarChequeos.this, chequeoMedicos);

@@ -129,7 +129,7 @@ public class actualizarUsuario extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         barraProgreso.setVisibility(View.INVISIBLE);
                         // Actualización exitosa, mostrar mensaje de éxito al usuario
-                        Toast.makeText(actualizarUsuario.this, "Paciente actualizado correctamente", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(actualizarUsuario.this, "Usuario actualizado correctamente", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {
@@ -137,7 +137,7 @@ public class actualizarUsuario extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         barraProgreso.setVisibility(View.INVISIBLE);
                         // Error al actualizar el paciente, mostrar mensaje de error al usuario
-                        Toast.makeText(actualizarUsuario.this, "Error"+error.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(actualizarUsuario.this, "Error al actualizar el Usuario"+error.toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
 
